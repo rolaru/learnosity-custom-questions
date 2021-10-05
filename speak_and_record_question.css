@@ -3,25 +3,25 @@
  */
 @font-face {
   font-family: "Heinemann Roman";
-  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.ttf") format("truetype");
+  src: url("https://rolaru.github.io/learnosity-custom-questions/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.woff") format("woff"), url("https://rolaru.github.io/learnosity-custom-questions/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Heinemann Roman";
-  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.ttf") format("truetype");
+  src: url("https://rolaru.github.io/learnosity-custom-questions/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.woff") format("woff"), url("https://rolaru.github.io/learnosity-custom-questions/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.ttf") format("truetype");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: "Heinemann Roman";
-  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.ttf") format("truetype");
+  src: url("https://rolaru.github.io/learnosity-custom-questions/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.woff") format("woff"), url("https://rolaru.github.io/learnosity-custom-questions/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: "Heinemann Roman";
-  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.ttf") format("truetype");
+  src: url("https://rolaru.github.io/learnosity-custom-questions/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.woff") format("woff"), url("https://rolaru.github.io/learnosity-custom-questions/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
 
@@ -48,7 +48,7 @@
 .speak-and-record {
   padding: 20px;
   font-family: "Heinemann Roman", Arial, sans-serif;
-  background: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/card-pattern.svg") #f5f5f5; }
+  background: url("https://rolaru.github.io/learnosity-custom-questions/assets/images/card-pattern.svg") #f5f5f5; }
   .speak-and-record__target--image-container {
     display: flex; }
   .speak-and-record__target--image {
@@ -65,6 +65,9 @@
   .speak-and-record__icon {
     color: white;
     font-size: 35px; }
+  .speak-and-record__score-icon {
+    display: flex;
+    justify-content: center; }
   .speak-and-record__button {
     background-color: #f85178;
     width: 60px;
@@ -102,12 +105,79 @@
     transform: scale(0.9);
     box-shadow: 0 0 0 0 rgba(248, 81, 120, 0); } }
 
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: none;
+    transform: none; }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes wobble {
+  0% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    -ms-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    -ms-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    -ms-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    -ms-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+.wobble {
+  -webkit-animation-name: wobble;
+  animation-name: wobble; }
+
 .sound-button {
   vertical-align: middle;
   margin-right: 10px;
   width: 40px;
   height: 40px;
-  background: url("https://dev-lrns.pep.ift.pearson-intl.com/activities/assets/images/sound-button.png") no-repeat;
+  background: url("https://rolaru.github.io/learnosity-custom-questions/assets/images/sound-button.png") no-repeat;
   border: 0;
   cursor: pointer; }
 
