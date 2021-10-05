@@ -1,0 +1,29 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  id="tracing-svg"
+  viewBox="0 0 100 100"
+  version="1.1"
+>
+
+  <defs>
+    <path id="path-road-1" d="M 45 5 L 45 95" />
+    <path id="path-road-2" d="M 45 5 C 80 5 80 45 45 45" />
+    <path id="path-road-3" d="M 45 45 C 85 45 85 95 45 95" />
+  </defs>
+
+  <g>
+    <g>
+      <use fill="transparent" stroke="#E2E2E2" stroke-width="8" class="road" xlink:href="#path-road-3"/>
+      <use fill="transparent" stroke="#403E50" stroke-width="8" class="progress" id="progress-3" xlink:href="#path-road-3"/>
+    </g>
+    <g>
+      <use fill="transparent" stroke="#E2E2E2" stroke-width="8" class="road" xlink:href="#path-road-2"/>
+      <use fill="transparent" stroke="#403E50" stroke-width="8" class="progress" id="progress-2" xlink:href="#path-road-2"/>
+    </g>
+    <g>
+      <use fill="transparent" stroke="#E2E2E2" stroke-width="8" class="road" xlink:href="#path-road-1"/>
+      <use fill="transparent" stroke="#403E50" stroke-width="8" class="progress" id="progress-1" xlink:href="#path-road-1"/>
+    </g>
+  </g>
+</svg>

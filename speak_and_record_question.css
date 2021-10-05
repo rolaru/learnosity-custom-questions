@@ -1,0 +1,120 @@
+/**
+ * Heinemann Roman
+ */
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BdIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-Blk.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Heinemann Roman";
+  src: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.woff") format("woff"), url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/fonts/Heinemann-Roman/HeinemannRoman-BlkIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+.lrn .row {
+  width: 100%; }
+
+.invalid-field-message {
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold; }
+
+@keyframes sparkle {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+* {
+  box-sizing: border-box; }
+
+.speak-and-record {
+  padding: 20px;
+  font-family: "Heinemann Roman", Arial, sans-serif;
+  background: url("https://daniel-vlad.github.io/learnosity-demo-dist/assets/images/card-pattern.svg") #f5f5f5; }
+  .speak-and-record__target--image-container {
+    display: flex; }
+  .speak-and-record__target--image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 20%;
+    border: 7px solid white; }
+  .speak-and-record__target--phrase {
+    background-color: white;
+    width: fit-content;
+    border-radius: 15%;
+    margin: 15px auto; }
+  .speak-and-record__icon {
+    color: white;
+    font-size: 35px; }
+  .speak-and-record__button {
+    background-color: #f85178;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid white 7px;
+    margin: 0 auto;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.1em 0.3em 1em rgba(0, 0, 0, 0.3); }
+    .speak-and-record__button--pulse {
+      -webkit-animation: pulse 1.5s infinite;
+      animation: pulse 1.5s infinite; }
+    .speak-and-record__button--wrapper {
+      display: flex;
+      margin-top: 5px; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(248, 81, 120, 0.7); }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(248, 81, 120, 0); }
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(248, 81, 120, 0); } }
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(248, 81, 120, 0.7); }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(248, 81, 120, 0); }
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(248, 81, 120, 0); } }
+
+.sound-button {
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url("https://dev-lrns.pep.ift.pearson-intl.com/activities/assets/images/sound-button.png") no-repeat;
+  border: 0;
+  cursor: pointer; }
+
+.instruction-line {
+  padding: 25px;
+  text-align: center; }
+  .instruction-line__text {
+    vertical-align: middle;
+    font-size: 25px; }
+

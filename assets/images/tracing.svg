@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="507" viewBox="0 0 820 507" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="path-road-1" d="M0 272l134 .5c30.1 0 54.5 24.4 54.5 54.5l1 23c0 30.1 24.4 54.5 54.5 54.5s54.5-24.4 54.5-54.5V193c0-30.1 24.4-54.5 54.5-54.5s54.5 24.4 54.5 54.5l2 159c0 30.1 24.289 54.5 54.25 54.5S518 382.1 518 352l2-159.5c0-30.1 24.4-54.5 54.5-54.5s54.5 24.4 54.5 54.5l-.5 23.5c0 30.1 24.4 54.5 54.5 54.5l136.5 1"/>
+  </defs>
+  <g>
+    <g>
+      <use fill="transparent" stroke="#E2E2E2" stroke-width="43" class="road" xlink:href="#path-road-1"/>
+      <use fill="transparent" stroke="#6AB25E" stroke-width="43" class="progress" id="pregress-1" xlink:href="#path-road-1"/>
+    </g>
+  </g>
+</svg>

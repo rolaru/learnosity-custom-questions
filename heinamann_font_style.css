@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Heinemann-Regular";
+  src: url(./assets/fonts/Heinemann-Roman/HeinemannRoman-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heinemann-Bold";
+  src: url(./assets/fonts/Heinemann-Roman/HeinemannRoman-Bd.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lrn,
+.lrn.lrn_widget,
+.lrn.lrn-assess,
+.lrn_cloze_response_container,
+.lrn_cloze_response,
+.lrn_mcq,
+.lrn_widget .lrn_texteditor_editable {
+  font-family: "Heinemann-Regular";
+}
+div.lrn h1,
+div.lrn h2,
+div.lrn h3,
+div.lrn h4,
+div.lrn h5,
+div.lrn h6 {
+  font-family: "Heinemann-Bold";
+}
+div.lrn p {
+  font-family: "Heinemann-Regular";
+}
+.lrn_question strong,
+div.lrn b,
+div.lrn strong {
+  font-family: "Heinemann-Bold";
+}
+div.lrn code,
+div.lrn kbd,
+div.lrn pre,
+div.lrn samp { 
+  font-family: "Heinemann-Regular";
+}
